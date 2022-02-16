@@ -101,7 +101,7 @@ static Optional<List<Question>> LeerTxt(File file) {
 			String linea;
 
 			while ((linea = bufferedReader.readLine()) != null) {
-				question=new Gson().fromJson(linea, Question.class);
+			//	question=new Gson().fromJson(linea, Question.class);
 				questions.add(question);
 			}
 			return Optional.ofNullable(questions);
